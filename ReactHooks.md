@@ -80,7 +80,7 @@ function app() {
 此副作用与useEffect结构一致，只是调用时机不一致。useLayoutEffect 是在浏览器绘制之前，将同步执行。
 
 #### 3、[useRef](https://react.docschina.org/docs/hooks-reference.html#useref)
-- useRef 返回一个可变的 ref 对象，其 .current 属性被初始化为传入的参数（initialValue）。返回的 ref 对象在组件的整个生命周期内保持不变。
+- useRef 返回一个不可变的 ref 对象，其 .current 属性被初始化为传入的参数（initialValue）。返回的 ref 对象在组件的整个生命周期内保持不变。
 - useRef 接收任意参数，此参数将作为其 .current 属性的初始值
 - **用法**  
 ```javascript
